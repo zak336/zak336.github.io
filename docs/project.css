@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+* {
+    margin: 0%;
+}
+
+title {
+    font-family: 'PT Mono', monospace;
+}
+
+.main {
+    display: flex;
+    background-color: cornsilk;
+}
+
+.info {
+    /* background-color: aqua;*/
+    /* background-color: #e7e7e7;*/
+    background-color: wheat;
+    width: 100vw;
+    height: 100vh;
+    border-top-left-radius: 142px;
+    text-align: center;
+}
+
+.sidebar {
+    /* background-color: brown;*/
+    background-color: grey;
+    width: 188px;
+    height: 100vh;
+    border-top-right-radius: 142px;
+    color: black;
+
+}
+
+.sidebar nav {
+    padding: 0px;
+}
+
+.sidebar nav li {
+
+    font-family: 'Roboto Mono', monospace;
+    list-style: none;
+    text-align: left;
+    font-size: 22px;
+    padding: 36px 0px;
+
+}
+
+.sidebar nav li:hover {
+    font-size: 24px;
+}
+
+.sidebar nav li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.con {
+    margin: 17rem;
+}
+
+.hamburger {
+    position: absolute;
+    margin: 10px;
+}
+
+.ham:hover {
+    color: rgb(105, 104, 104);
+}
+
+.cross {
+    margin-left: 98px;
+
+}
+
+@media (max-width: 1234px) {
+
+    .sidebar {
+        position: absolute;
+        transform: translate(-192px, 0px);
+    }
+
+
+    .infocon {
+        height: 100vh;
+    }
+
+    .info {
+        height: 120vh;
+    }
+
+    .myinfo {
+        margin: 110px 20px;
+    }
+
+    .abme {
+
+        font-size: 91px;
+    }
+
+    .name {
+
+        font-size: 69px;
+    }
+
+    .about {
+        font-size: 39px;
+
+    }
+
+    .mabt {
+        font-size: 29px;
+    }
+
+    .buttons button {
+        padding: 7px 24px;
+        width: 224px;
+        font-size: 34px;
+        margin-top: 33px
+    }
+
+    .devpic img {
+
+        height: 46vh;
+    }
+
+    .devpic {
+
+        margin-bottom: -289px;
+    }
+}
+
+.sidebargo {
+    position: absolute;
+    transform: translate(-192px, 0px);
+}
