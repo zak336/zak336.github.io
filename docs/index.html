@@ -1,53 +1,121 @@
 <!DOCTYPE html>
-<html lang="en-IN">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Zakee">
-    <meta name="keyword" content="Zakee Ahmed, Zakee Ahmed portfolio">
-    <meta name="description" content="this is my portfolio">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge,Chrome=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zakee Ahmed Cyber Security Enthusiast </title>
-    <link rel="stylesheet" href="1.css">
+  <meta charset="UTF-8">
+  <title>Zakee Ahmed's Portfolio</title>
+  <style>
+     /* Basic styling for the portfolio */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4; /* Background color */
+      color: #333; /* Text color */
+      font-size: 16px; /* Define a base font size */
+    }
+
+    header {
+      background-color: #333; /* Header background color */
+      color: white; /* Header text color */
+      padding: 4vh; /* Responsive padding */
+      text-align: center;
+    }
+
+    .headInfo {
+      margin-right: -18vw; /* Responsive margin */
+    }
+
+    .profile-image {
+      width: 15vw; /* Responsive width */
+      height: 15vw; /* Responsive height */
+      border-radius: 0 50vw 50vw 50vw; /* Responsive rounded corners */
+      overflow: hidden; /* Hide overflow for rounded corners */
+      margin-right: 5%; /* Responsive margin */
+      margin-top: -9vw; /* Responsive margin */
+      margin-left: 15vw; /* Responsive margin */
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    nav {
+      text-align: center;
+      padding: 1.15% 0; /* Responsive padding */
+      background-color: #444; /* Navigation background color */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white; /* Navigation link text color */
+      padding: 2% 4%; /* Responsive padding */
+    }
+
+    nav a:hover {
+      background-color: #555; /* Hover color for navigation links */
+    }
+
+    /* Main content section */
+    .container {
+      width: 80%;
+      margin: 5% auto; /* Responsive margin */
+      padding: 5%; /* Responsive padding */
+      background-color: white;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 1.15%; /* Responsive padding */
+      background-color: #333;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
-
 <body>
-    <section class="main">
-        <div class="hamburger">
-           <img class="ham" src="hbicon.png" alt="hbicon" width="23px">
-           <img class="cross" src="cross.png" alt="cross" width="23px">
-        </div>
-        <div class="sidebar sidebargo">
-            <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a target="_blank" href="cv.html">CV</a></li>
-                    <li> <a href="services.html">Services</a></li>
-                    <li> <a href="projects.html">Projects</a></li>
-                    <li> <a href="blog.html">Blog</a></li>
-                    <li> <a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="info">
-            <div class="infocon">
-                <div class="myinfo">
-                    <div class="abme"><span>Hi, I am </span></div>
-                    <div class="name">Zakee Ahmed</div>
-                    <div class="about">Web Developer, IoT & Cyber Security Enthusiast</div>
-                    <div class="mabt">I am Specialised in Web & IoT development, Blue teaming and Networking </div>
-                    <div class="buttons">
-                        <a target="_blank" href="cv.pdf"><button>Download CV</button></a>
-                        <a href="contact.html"><button>Contact Me</button></a>
-                    </div>
-                </div>
-                <div class="devpic"><img src="dev.png" alt="dev"></div>
-            </div>
-        </div>
-        <script src="1.js"></script>
-    </section>
-</body>
 
+  <header>
+    <div class="headInfo">
+    <h1>Zakee Ahmed - Portfolio</h1>
+    <p>Welcome to my portfolio website</p>
+    <div> 
+	<div class="profile-image">
+      <img src="images/myImage.jpg" alt="Profile Image">
+        </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <!-- Add more navigation links as needed -->
+  </nav>
+
+  <div class="container" id="about">
+    <h2>About Me</h2>
+    <p>Add information about yourself here.</p>
+    <p>Include your skills, experiences, and background.</p>
+  </div>
+
+  <div class="container" id="projects">
+    <h2>Projects</h2>
+    <p>Display your projects with descriptions and links.</p>
+    <!-- Include project details and images -->
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Me</h2>
+    <p>Add contact information or a contact form here.</p>
+  </div>
+
+  <footer>
+    &copy; 2023 Zakee Ahmed - Portfolio
+  </footer>
+
+</body>
 </html>
