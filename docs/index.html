@@ -71,6 +71,30 @@
       background-color: white;
     }
 
+    /* Basic styling for the container */
+    .contact-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    /* Style for individual buttons */
+    .contact-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .contact-button img {
+      width: 50px; /* Adjust icon size as needed */
+      height: auto;
+      margin-bottom: 5px;
+    }
+
     /* Footer styling */
     footer {
       text-align: center;
@@ -116,6 +140,29 @@
 
   <div class="container" id="contact">
     <h2>Contact Me</h2>
+
+    <div class="contact-container">
+      <a class="contact-button" href="https://www.linkedin.com/in/zak336" target="_blank">
+        <img src="linkedin_icon.png" alt="LinkedIn Icon">
+        LinkedIn
+      </a>
+      <a class="contact-button" href="https://github.com/zak336" target="_blank">
+        <img src="github_icon.png" alt="GitHub Icon">
+        GitHub
+      </a>
+      <a class="contact-button" href="https://twitter.com/Zakeeahmed15" target="_blank">
+        <img src="twitter_icon.png" alt="Twitter Icon">
+        X
+      </a>
+      <a class="contact-button" href="contact.html">
+        <img src="contact_icon.png" alt="Contact Icon">
+        Contact Me
+      </a>
+      <a class="contact-button" href="contact.html">
+        <img src="Email.png" alt="Contact Icon">
+        Email
+      </a>
+    </div>
     <a href = "https://www.linkedin.com/in/zak336">Linkdin</a> <br>
     <a href = "https://github.com/zak336">GitHub</a> <br>
     <a href = "https://twitter.com/Zakeeahmed15">X (twitter)</a> <br>
