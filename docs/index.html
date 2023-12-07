@@ -71,30 +71,40 @@
       background-color: white;
     }
 
-    /* Basic styling for the container */
     .contact-container {
       display: flex;
       justify-content: space-around;
       align-items: center;
       margin-top: 20px;
+      background-color: white;
+      padding: 5vw;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     /* Style for individual buttons */
     .contact-button {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-decoration: none;
       color: #333;
-      font-size: 16px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      margin: 2vw;
+      padding: 4vw 5vw;
+      border-radius: 5px;
+      background-color: #ddd;
+      flex-basis: 25%;
+    }
+
+    .contact-button:hover {
+      background-color: #ccc;
     }
 
     .contact-button img {
-      width: 50px; /* Adjust icon size as needed */
+      width: 15vw; /* Adjust icon size responsively */
       height: auto;
       margin-bottom: 5px;
     }
-
+    
     /* Footer styling */
     footer {
       text-align: center;
