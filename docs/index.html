@@ -52,6 +52,24 @@
       text-align: right; /* Align text to the right */
     }
 
+    @media (max-width: 768px) {
+        header {
+          flex-direction: column; /* Stack items vertically */
+          align-items: center; /* Center items vertically */
+        }
+    
+        .headInfo {
+          text-align: center; /* Center align text in mobile view */
+        }
+    
+        .profile-image {
+          margin-left: 0; /* Remove margin for better layout */
+          margin-top: 10px; /* Add space between image and text */
+          width: 80px; /* Adjust the width of the image */
+          height: 80px; /* Adjust the height of the image */
+        }
+    }
+
     nav {
       text-align: center;
       padding: 1.15% 0; /* Responsive padding */
