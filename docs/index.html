@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Zakee Ahmed's Portfolio</title>
@@ -15,75 +16,122 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4; /* Background color */
-      color: #333; /* Text color */
-      font-size: 16px; /* Define a base font size */
+      background-color: #f4f4f4;
+      /* Background color */
+      color: #333;
+      /* Text color */
+      font-size: 16px;
+      /* Define a base font size */
     }
 
     header {
-      background-color: #333; /* Header background color */
-      color: white; /* Header text color */
-      padding: 4vh; /* Responsive padding */
+      background-color: #333;
+      /* Header background color */
+      color: white;
+      /* Header text color */
+      padding: 4vh;
+      /* Responsive padding */
       text-align: center;
-      background-color: #333; /* Header background color */
-      box-sizing: border-box; /* Include padding in the width calculation */
-      width: 100%; /* Set header width to 100% */
-      display: flex; /* Flexbox styles to center content */
-      align-items: center; /* Center vertically */
+      background-color: #333;
+      /* Header background color */
+      box-sizing: border-box;
+      /* Include padding in the width calculation */
+      width: 100%;
+      /* Set header width to 100% */
+      display: flex;
+      /* Flexbox styles to center content */
+      align-items: center;
+      /* Center vertically */
       justify-content: space-evenly;
     }
 
     .profile-image {
-      width: 15vw; /* Responsive width */
-      height: 15vw; /* Responsive height */
-      border-radius: 0 50vw 50vw 50vw; /* Responsive rounded corners */
-      overflow: hidden; /* Hide overflow for rounded corners */
-      margin-right: 5%; /* Responsive margin */
-      margin-left: 15vw; /* Responsive margin */
+      width: 15vw;
+      /* Responsive width */
+      height: 15vw;
+      /* Responsive height */
+      border-radius: 0 50vw 50vw 50vw;
+      /* Responsive rounded corners */
+      overflow: hidden;
+      /* Hide overflow for rounded corners */
+      margin-right: 5%;
+      /* Responsive margin */
+      margin-left: 15vw;
+      /* Responsive margin */
     }
 
     .profile-image img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Maintain aspect ratio */
+      object-fit: cover;
+      /* Maintain aspect ratio */
     }
 
     .headInfo {
-      text-align: right; /* Align text to the right */
+      text-align: right;
+      /* Align text to the right */
     }
 
     @media (max-width: 768px) {
-        header {
-          flex-direction: column; /* Stack items vertically */
-          align-items: center; /* Center items vertically */
-        }
-    
-        .headInfo {
-          text-align: center; /* Center align text in mobile view */
-        }
-    
-        .profile-image {
-          margin-left: 0; /* Remove margin for better layout */
-          margin-top: 10px; /* Add space between image and text */
-          width: 80px; /* Adjust the width of the image */
-          height: 80px; /* Adjust the height of the image */
-        }
+      header {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items vertically */
+      }
+
+      .headInfo {
+        text-align: center;
+        /* Center align text in mobile view */
+      }
+
+      .profile-image {
+        margin-left: 0;
+        /* Remove margin for better layout */
+        margin-top: 10px;
+        /* Add space between image and text */
+        width: 80px;
+        /* Adjust the width of the image */
+        height: 80px;
+        /* Adjust the height of the image */
+      }
+
+      .contact-button {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        text-align: center;
+        /* Center-align the text */
+      }
+
+      .contact-button img {
+        width: 3vw;
+        /* Adjust the width of the icon */
+        height: auto;
+        /* Maintain aspect ratio */
+      }
     }
 
     nav {
       text-align: center;
-      padding: 1.15% 0; /* Responsive padding */
-      background-color: #444; /* Navigation background color */
+      padding: 1.15% 0;
+      /* Responsive padding */
+      background-color: #444;
+      /* Navigation background color */
     }
 
     nav a {
       text-decoration: none;
-      color: white; /* Navigation link text color */
-      padding: 2% 4%; /* Responsive padding */
+      color: white;
+      /* Navigation link text color */
+      padding: 2% 4%;
+      /* Responsive padding */
     }
 
     nav a:hover {
-      background-color: #555; /* Hover color for navigation links */
+      background-color: #555;
+      /* Hover color for navigation links */
       border-radius: 12rem 12rem;
       border-bottom-left-radius: 0rem;
     }
@@ -91,10 +139,12 @@
     /* Main content section */
     .container {
       width: 80%;
-      margin: 5% auto; /* Responsive margin */
-      padding: 5%; /* Responsive padding */
+      margin: 5% auto;
+      /* Responsive margin */
+      padding: 5%;
+      /* Responsive padding */
       background-color: white;
-      border-top-right-radius: 6rem;
+      border-top-right-radius: 3rem;
       box-shadow: 0 0 10px rgba(62, 124, 60, 0.644);
     }
 
@@ -128,15 +178,18 @@
     }
 
     .contact-button img {
-      width: 6vw; /* Adjust icon size responsively */
+      width: 3vw;
+      /* Adjust icon size responsively */
       height: auto;
-      margin-bottom: 5px;
+      margin-bottom: 24px;
+      margin-right: -51px;
     }
 
     /* Footer styling */
     footer {
       text-align: center;
-      padding: 1.15%; /* Responsive padding */
+      padding: 1.15%;
+      /* Responsive padding */
       background-color: #333;
       color: white;
       position: fixed;
@@ -145,6 +198,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -203,4 +257,5 @@
   </footer>
 
 </body>
+
 </html>
