@@ -149,6 +149,20 @@
         cursor: pointer;
         background-color: #333;
         color: white;
+        font-size: large;
+      }
+
+      /* Styles for the close button */
+      .close-sidebar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: #888;
+        outline: none;
       }
     }
 
@@ -284,13 +298,20 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="contactMe.html">Contact</a></li>
     <li><a href="cv.MD">Download CV</a></li>
+    <button class="close-sidebar">&times;</button>
   </div>
-  <div class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</div>
+  <div class="sidebar-toggle" onclick="toggleSidebar()"> ☰ </div>
   <script>
     // Function to toggle sidebar visibility
     function toggleSidebar() {
       const sidebar = document.querySelector('.sidebar');
       sidebar.classList.toggle('show-sidebar');
+    }
+
+    // Event listener for the close button to toggle the sidebar
+    const closeButton = document.querySelector('.close-sidebar');
+    if (closeButton) {
+      closeButton.addEventListener('click', toggleSidebar);
     }
 
     // Function to close sidebar if touched outside the sidebar
