@@ -125,7 +125,7 @@ header {
     }
 }
 
-nav {
+.pc {
     text-align: center;
     padding: 1.15% 0;
     /* Responsive padding */
@@ -133,7 +133,7 @@ nav {
     /* Navigation background color */
 }
 
-nav a {
+.pc a {
     text-decoration: none;
     color: white;
     /* Navigation link text color */
