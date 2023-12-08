@@ -90,14 +90,12 @@
 
       /* for mobile view */
       header {
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center items vertically */
+        position: relative;
       }
 
       .headInfo {
         text-align: center;
+        margin-right: -2rem;
       }
 
       .profile-image {
@@ -154,132 +152,135 @@
 
       /* Style for the button to open the sidebar */
       .sidebar-toggle {
-        display: block;
-        text-align: left;
+        position: absolute;
+        /* Position the sidebar toggle button */
+        top: 10px;
+        /* Adjust the top distance */
+        right: 10px;
+        /* Adjust the right distance */
         padding: 10px;
         cursor: pointer;
         background-color: #333;
         color: white;
         font-size: large;
+
+        /* Styles for the close button */
+        .close-sidebar {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-size: 20px;
+          color: #888;
+          outline: none;
+        }
       }
 
-      /* Styles for the close button */
-      .close-sidebar {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        color: #888;
-        outline: none;
-      }
-    }
+      /* desktop mode */
+      @media (min-width: 769px) {
+        .sidebar {
+          display: none;
+        }
 
-    /* desktop mode */
-    @media (min-width: 769px) {
-      .sidebar {
-        display: none;
-      }
+        .sidebar-toggle {
+          display: none;
+          /* Hide the sidebar toggle button */
+        }
 
-      .sidebar-toggle {
-        display: none;
-        /* Hide the sidebar toggle button */
+        /* Adjust content width when sidebar is hidden */
+        .container {
+          width: 90%;
+          /* Adjust width to accommodate the space */
+          margin-left: 5%;
+          /* Center the content */
+        }
       }
 
-      /* Adjust content width when sidebar is hidden */
+      nav {
+        text-align: center;
+        padding: 1.15% 0;
+        /* Responsive padding */
+        background-color: #444;
+        /* Navigation background color */
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        /* Navigation link text color */
+        padding: 1% 4%;
+        /* Responsive padding */
+      }
+
+      nav a:hover {
+        background-color: #555;
+        /* Hover color for navigation links */
+        border-radius: 12rem 12rem;
+        border-bottom-left-radius: 0rem;
+      }
+
+      /* Main content section */
       .container {
-        width: 90%;
-        /* Adjust width to accommodate the space */
-        margin-left: 5%;
-        /* Center the content */
+        width: 80%;
+        margin: 5% auto;
+        /* Responsive margin */
+        padding: 5%;
+        /* Responsive padding */
+        background-color: white;
+        border-top-right-radius: 3rem;
+        box-shadow: 0 0 10px rgba(62, 124, 60, 0.644);
       }
-    }
 
-    nav {
-      text-align: center;
-      padding: 1.15% 0;
-      /* Responsive padding */
-      background-color: #444;
-      /* Navigation background color */
-    }
+      .contact-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        background-color: white;
+        padding: 5vw;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
 
-    nav a {
-      text-decoration: none;
-      color: white;
-      /* Navigation link text color */
-      padding: 1% 4%;
-      /* Responsive padding */
-    }
+      /* Style for individual buttons */
+      .contact-button {
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        margin: 2vw;
+        padding: 1vw 2vw;
+        border-radius: 5px;
+        background-color: #ddd;
+        flex-basis: 25%;
+        box-shadow: 0 0 10px rgba(61, 60, 60, 0.377);
+      }
 
-    nav a:hover {
-      background-color: #555;
-      /* Hover color for navigation links */
-      border-radius: 12rem 12rem;
-      border-bottom-left-radius: 0rem;
-    }
+      .contact-button:hover {
+        background-color: #ccc;
+      }
 
-    /* Main content section */
-    .container {
-      width: 80%;
-      margin: 5% auto;
-      /* Responsive margin */
-      padding: 5%;
-      /* Responsive padding */
-      background-color: white;
-      border-top-right-radius: 3rem;
-      box-shadow: 0 0 10px rgba(62, 124, 60, 0.644);
-    }
-
-    .contact-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 20px;
-      background-color: white;
-      padding: 5vw;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Style for individual buttons */
-    .contact-button {
-      text-decoration: none;
-      color: #333;
-      text-align: center;
-      transition: background-color 0.3s ease;
-      margin: 2vw;
-      padding: 1vw 2vw;
-      border-radius: 5px;
-      background-color: #ddd;
-      flex-basis: 25%;
-      box-shadow: 0 0 10px rgba(61, 60, 60, 0.377);
-    }
-
-    .contact-button:hover {
-      background-color: #ccc;
-    }
-
-    .contact-button img {
-      width: 3vw;
-      /* Adjust icon size responsively */
-      height: auto;
-      /* margin-bottom: 4vh;
+      .contact-button img {
+        width: 3vw;
+        /* Adjust icon size responsively */
+        height: auto;
+        /* margin-bottom: 4vh;
       margin-right: -4vw; */
-    }
+      }
 
-    /* Footer styling */
-    footer {
-      text-align: center;
-      padding: 1.15%;
-      /* Responsive padding */
-      background-color: #333;
-      color: white;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
+      /* Footer styling */
+      footer {
+        text-align: center;
+        padding: 1.15%;
+        /* Responsive padding */
+        background-color: #333;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
   </style>
 </head>
 
@@ -342,7 +343,7 @@
   <div class="container" id="about">
     <h2>About Me</h2>
     <p>Hi there, I am <b>Zakee Ahmed</b> from Bhilai, Chhattishgarh, India.</p>
-    <button download>Download CV</button>
+    <!-- <button download>Download CV</button> -->
     <p></p>
   </div>
 
