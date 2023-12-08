@@ -133,6 +133,21 @@
         z-index: 1000;
         padding-top: 20px;
         border-top-right-radius: 3rem;
+        box-shadow: #444;
+
+      }
+
+      .sidebarElement {
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        margin: 2vw;
+        padding: 1vw 2vw;
+        border-radius: 5px;
+        background-color: #ddd;
+        flex-basis: 25%;
+        box-shadow: 0 0 10px rgba(61, 60, 60, 0.377);
 
       }
 
@@ -149,7 +164,7 @@
         cursor: pointer;
         background-color: #333;
         color: white;
-        font-size: large;
+        font-size: larger;
       }
 
       /* Styles for the close button */
@@ -293,11 +308,11 @@
   </nav>
 
   <div class="sidebar">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="contactMe.html">Contact</a></li>
-    <li><a href="cv.MD">Download CV</a></li>
+    <a class="sidebarElement" href="#about">About</a>
+    <a class="sidebarElement" href="#projects">Projects</a>
+    <a class="sidebarElement" href="contactMe.html">Contact</a>
+    <a class="sidebarElement" href="index.html">Home</a>
+    <a class="sidebarElement" href="cv.MD">Download CV</a>
     <button class="close-sidebar">&times;</button>
   </div>
   <div class="sidebar-toggle" onclick="toggleSidebar()"> ☰ </div>
