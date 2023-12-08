@@ -126,27 +126,28 @@
         height: 100%;
         position: fixed;
         top: 0;
-        text-align: left;
-        background-color: whitesmoke;
-        color: black;
+        left: -200px;
+        background-color: #333;
+        color: white;
         transition: left 0.3s ease;
         z-index: 1000;
         padding-top: 20px;
         border-top-right-radius: 1rem;
 
+
       }
 
       .sidebarElement {
         text-decoration: none;
-        color: #000000;
+        color: #333;
         text-align: center;
-        font-weight: bold;
-        margin: 1vw 3vw;
-        padding: 4vw 2vw;
-        display: block;
-        /* Display elements as block-level */
-        border-bottom: 1px solid rgba(0, 0, 0, 0.589);
-        /* Border as a divider */
+        transition: background-color 0.3s ease;
+        margin: 2vw;
+        padding: 1vw 2vw;
+        border-radius: 5px;
+        background-color: #ddd;
+        flex-basis: 25%;
+        box-shadow: 0 0 10px rgba(61, 60, 60, 0.377);
       }
 
       /* Show the sidebar when a certain button is clicked */
@@ -162,7 +163,7 @@
         cursor: pointer;
         background-color: #333;
         color: white;
-        font-size: larger;
+        font-size: large;
       }
 
       /* Styles for the close button */
@@ -343,6 +344,7 @@
   <div class="container" id="about">
     <h2>About Me</h2>
     <p>Hi there, I am <b>Zakee Ahmed</b> from Bhilai, Chhattishgarh, India.</p>
+    <button download>Download CV</button>
     <p></p>
   </div>
 
