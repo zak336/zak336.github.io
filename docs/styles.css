@@ -1,0 +1,258 @@
+/* Basic styling for the portfolio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Background color */
+    color: #333;
+    /* Text color */
+    font-size: 16px;
+    /* Define a base font size */
+}
+
+header {
+    background-color: #333;
+    /* Header background color */
+    color: white;
+    /* Header text color */
+    padding: 4vh;
+    /* Responsive padding */
+    text-align: center;
+    background-color: #333;
+    /* Header background color */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+    width: 100%;
+    /* Set header width to 100% */
+    display: flex;
+    /* Flexbox styles to center content */
+    align-items: center;
+    /* Center vertically */
+    justify-content: space-evenly;
+}
+
+.profile-image {
+    width: 15vw;
+    /* Responsive width */
+    height: 15vw;
+    /* Responsive height */
+    border-radius: 0 50vw 50vw 50vw;
+    /* Responsive rounded corners */
+    overflow: hidden;
+    /* Hide overflow for rounded corners */
+    margin-right: 5%;
+    /* Responsive margin */
+    margin-left: 15vw;
+    /* Responsive margin */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
+
+.headInfo {
+    text-align: right;
+    /* Align text to the right */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .headInfo {
+        text-align: center;
+        /* Center align text in mobile view */
+    }
+
+    .profile-image {
+        margin-left: 0;
+        /* Remove margin for better layout */
+        margin-top: 10px;
+        /* Add space between image and text */
+        width: 80px;
+        /* Adjust the width of the image */
+        height: 80px;
+        /* Adjust the height of the image */
+    }
+
+    .contact-button img {
+        width: 6vw;
+        /* Adjust icon size responsively */
+        height: auto;
+    }
+
+    .navbar {
+        width: 200px;
+        /* Set sidebar width */
+        position: fixed;
+        top: 0;
+        left: -200px;
+        /* Hide the sidebar initially */
+        background-color: #333;
+        /* Background color for sidebar */
+        color: white;
+        transition: left 0.3s ease;
+        /* Smooth transition animation */
+        z-index: 1000;
+        /* Set a high z-index to appear over other content */
+        display: block;
+        /* Change display to block for mobile */
+
+    }
+
+    .show-sidebar {
+        left: 0;
+    }
+
+    /* Style for the button to open the sidebar */
+    .sidebar-toggle {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #333;
+        /* Background color for the toggle button */
+        color: white;
+        /* Show the sidebar when a certain button is clicked */
+    }
+}
+
+nav {
+    text-align: center;
+    padding: 1.15% 0;
+    /* Responsive padding */
+    background-color: #444;
+    /* Navigation background color */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /* Navigation link text color */
+    padding: 2% 4%;
+    /* Responsive padding */
+}
+
+nav a:hover {
+    background-color: #555;
+    /* Hover color for navigation links */
+    border-radius: 12rem 12rem;
+    border-bottom-left-radius: 0rem;
+}
+
+/* Main content section */
+.container {
+    width: 80%;
+    margin: 5% auto;
+    /* Responsive margin */
+    padding: 5%;
+    /* Responsive padding */
+    background-color: white;
+    border-top-right-radius: 3rem;
+    box-shadow: 0 0 10px rgba(62, 124, 60, 0.644);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 5vw;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for individual buttons */
+.contact-button {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    background-color: #ddd;
+    flex-basis: 25%;
+    box-shadow: 0 0 10px rgba(61, 60, 60, 0.377);
+}
+
+.contact-button:hover {
+    background-color: #ccc;
+}
+
+.contact-button img {
+    width: 3vw;
+    /* Adjust icon size responsively */
+    height: auto;
+    /* margin-bottom: 4vh;
+    margin-right: -4vw; */
+}
+
+/* Form container */
+.containerContactMe {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contactMeHeader {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+input,
+textarea,
+button {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1.15%;
+    /* Responsive padding */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

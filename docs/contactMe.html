@@ -9,81 +9,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge,Chrome=1">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Basic styling for the portfolio */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4; /* Background color */
-      color: #333; /* Text color */
-      font-size: 16px; /* Base font size */
-    }
-
-    header {
-      background-color: #333; /* Header background color */
-      color: white; /* Header text color */
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* Form container */
-    .container {
-      width: 80%;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    /* Form elements */
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label,
-    input,
-    textarea,
-    button {
-      margin-bottom: 15px;
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-size: 16px;
-    }
-
-    button {
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #555;
-    }
-    footer {
-      text-align: center;
-      padding: 1.15%; /* Responsive padding */
-      background-color: #333;
-      color: white;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="java.js">
 </head>
 <body>
 
-  <header>
+  <header class="contactMeHeader">
     <h1>Contact Me</h1>
   </header>
 
-  <div class="container">
+  <div class="containerContactMe">
     <form action="mailto:zakeeukme@gmail.com" method="post" enctype="text/plain">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -98,18 +33,18 @@
       
   <button onclick="redirectToMainPage()">Go to Main Page</button>
 
-  <script>
+  <!-- <script>
     function redirectToGoogleForm() {
       window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true', '_blank'; // Replace 'main_page.html' with your main page URL
     }
-  </script>
+  </script> -->
   <button onclick="redirectToGoogleForm()">Or fill out this <b>Google Form</b></button>
 
-  <script>
+  <!-- <script>
     function redirectToMainPage() {
       window.location.href = 'index.html'; // Replace 'main_page.html' with your main page URL
     }
-  </script>
+  </script> -->
     </form>
   </div>
   <footer>

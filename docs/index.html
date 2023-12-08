@@ -10,6 +10,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="java.js">
+  <meta >
   <style>
     /* Basic styling for the portfolio */
     body {
@@ -97,11 +100,45 @@
       }
 
       .contact-button img {
-      width: 6vw;
-      /* Adjust icon size responsively */
-      height: auto;
+        width: 6vw;
+        /* Adjust icon size responsively */
+        height: auto;
       }
 
+      .navbar {
+        width: 200px;
+        /* Set sidebar width */
+        position: fixed;
+        top: 0;
+        left: -200px;
+        /* Hide the sidebar initially */
+        background-color: #333;
+        /* Background color for sidebar */
+        color: white;
+        transition: left 0.3s ease;
+        /* Smooth transition animation */
+        z-index: 1000;
+        /* Set a high z-index to appear over other content */
+        display: block;
+        /* Change display to block for mobile */
+
+      }
+
+      .show-sidebar {
+        left: 0;
+      }
+
+      /* Style for the button to open the sidebar */
+      .sidebar-toggle {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #333;
+        /* Background color for the toggle button */
+        color: white;
+        /* Show the sidebar when a certain button is clicked */
+      }
     }
 
     nav {
@@ -205,9 +242,17 @@
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="contactMe.html">Contact</a>
     <a href="cv.MD">Download CV</a>
   </nav>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="contactMe.html">Contact Me</a>
+    <a href="cv.MD">Download CV</a>
+  </nav>
+
 
   <div class="container" id="about">
     <h2>About Me</h2>
@@ -237,7 +282,8 @@
         Twitter
       </a>
 
-      <a class="contact-button" href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true">
+      <a class="contact-button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true">
         <img src="images/contact-form.png" class="resizable-icon" alt="Contact Icon">
         Contact Me
       </a>
