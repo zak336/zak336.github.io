@@ -287,12 +287,21 @@
     document.body.addEventListener('touchstart', function (event) {
       // Check if it's a touch event and if the viewport is in mobile view
       if (event.touches.length === 1 && isMobileView()) {
-        // Toggle the sidebar when touched outside the sidebar area
-        if (!event.target.closest('.sidebar') && !event.target.matches('.sidebar-toggle')) {
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+
+        // Toggle the sidebar only when touching the sidebar toggle button
+        if (sidebarToggle && event.target === sidebarToggle) {
           toggleSidebar();
+        } else {
+          // Close the sidebar if touched outside the sidebar or toggle button
+          if (!event.target.closest('.sidebar')) {
+            sidebar.classList.remove('show-sidebar');
+          }
         }
       }
     });
+
   </script>
 
   <div class="container" id="about">
