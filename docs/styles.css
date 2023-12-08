@@ -218,6 +218,18 @@ nav a:hover {
     margin-right: -4vw; */
 }
 
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1.15%;
+    /* Responsive padding */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Form container */
 .containerContactMe {
     width: 80%;
@@ -264,16 +276,4 @@ button {
 
 button:hover {
     background-color: #555;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 1.15%;
-    /* Responsive padding */
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
