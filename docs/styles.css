@@ -60,6 +60,8 @@ header {
 }
 
 @media (max-width: 768px) {
+
+    /* mobile view */
     header {
         flex-direction: column;
         /* Stack items vertically */
@@ -122,6 +124,26 @@ header {
         color: white;
     }
 
+}
+
+/* Hide sidebar in desktop mode */
+@media (min-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-toggle {
+        display: none;
+        /* Hide the sidebar toggle button */
+    }
+
+    /* Adjust content width when sidebar is hidden */
+    .container {
+        width: 90%;
+        /* Adjust width to accommodate the space */
+        margin-left: 5%;
+        /* Center the content */
+    }
 }
 
 nav {
