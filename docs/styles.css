@@ -89,6 +89,39 @@ header {
         height: auto;
     }
 
+    nav {
+        display: none;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        background-color: #333;
+        color: white;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        padding-top: 20px;
+    }
+
+    /* Show the sidebar when a certain button is clicked */
+    .show-sidebar {
+        left: 0;
+    }
+
+    /* Style for the button to open the sidebar */
+    .sidebar-toggle {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+    }
+
 }
 
 nav {
