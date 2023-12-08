@@ -286,7 +286,7 @@
     // Function to handle touchstart event on the body
     document.body.addEventListener('touchstart', function (event) {
       // Check if it's a touch event and if the viewport is in mobile view
-      if (event.touches.length === 1 && isMobileView()) {
+      if (event.touches.length === 0.5 && isMobileView()) {
         const sidebar = document.querySelector('.sidebar');
         const sidebarToggle = document.querySelector('.sidebar-toggle');
 
