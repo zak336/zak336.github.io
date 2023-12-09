@@ -100,7 +100,7 @@
     }
 
     .profile-image:active {
-      transform: scale(1.1);
+      transform: scale(1.6);
       /* Scale up the image when active */
 
     }
@@ -144,7 +144,8 @@
     }
 
     .sidebarElement:focus {
-      outline: 2px solid transparent; /* Set the outline to a transparent color */
+      outline: 2px solid transparent !important;
+      /* Set the outline to a transparent color */
     }
 
     /* Show the sidebar when a certain button is clicked */
@@ -171,7 +172,7 @@
     }
 
     .sidebar-toggle:focus {
-        outline: 2px solid transparent; /* Set the outline to a transparent color */
+      outline: 2px solid transparent !important;
     }
 
     .close-sidebar {
@@ -182,12 +183,12 @@
       border: none;
       cursor: pointer;
       font-size: 20px;
-      color: #888;
       padding: none;
     }
 
-    .close-sidebar:focus{
-      outline: 2px solid transparent; /* Set the outline to a transparent color */
+    .close-sidebar:focus {
+      outline: 2px solid transparent !important;
+      /* Set the outline to a transparent color */
     }
 
 
@@ -296,6 +297,8 @@
     width: 100%;
   }
 
+  /* contact me page */
+
   /* Form container */
   .containerContactMe {
     width: 80%;
@@ -343,4 +346,3 @@
   .buttonContactMe:hover {
     background-color: #555;
   }
-   

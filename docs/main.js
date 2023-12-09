@@ -37,7 +37,7 @@ function changeColor(event) {
     const originalColor = window.getComputedStyle(sidebarLink).color;
 
     // Change color on click
-    sidebarLink.style.color = 'red'; // Change this to your desired color
+    sidebarLink.style.color = 'green'; // Change this to your desired color
 
     // Reset color after a delay
     setTimeout(function () {
