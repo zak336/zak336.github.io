@@ -31,14 +31,3 @@ function redirectToGoogleForm() {
 function redirectToMainPage() {
     window.location.href = 'index.html'; // Replace 'main_page.html' with your main page URL
 }
-
-
-// document.querySelector('.loading-screen').style.display = 'block';
-
-document.querySelector('.loading-screen').style.display = 'flex';
-
-// Simulate content loading after 0.8 seconds
-setTimeout(function() {
-  document.querySelector('.loading-screen').style.display = 'none';
-  document.querySelector('.content').style.display = 'block';
-}, 800);
