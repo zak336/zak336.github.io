@@ -90,6 +90,13 @@
       top: 6.2rem;
       right: 17.3rem;
       position: absolute;
+      transition: transform 0.2s ease;
+      /* Add a smooth transition */
+    }
+
+    .profile-image:active {
+      transform: scale(1.1);
+      /* Scale up the image when active */
 
     }
 
