@@ -132,6 +132,10 @@
 
     }
 
+    .profile-image-sideHeader{
+      border-radius: 3rem;
+    }
+
     .sidebarElement {
       text-decoration: none;
       color: #000000;
