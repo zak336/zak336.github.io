@@ -166,6 +166,9 @@
       border-bottom: none;
     }
 
+    .pSideFooter{
+      font-size: smaller;
+    }
     .sidebarElement {
       text-decoration: none;
       color: #000000;
@@ -178,7 +181,7 @@
     }
 
     .sidebarElement:focus {
-      outline: none !important
+      outline: none !important;
         /* Set the outline to a transparent color */
     }
 
@@ -206,7 +209,7 @@
     }
 
     .sidebar-toggle:focus {
-      outline: none !important
+      outline: none !important;
     }
 
     .close-sidebar {
@@ -221,7 +224,7 @@
     }
 
     .close-sidebar:focus {
-      outline: none !important
+      outline: none !important;
         /* Set the outline to a transparent color */
     }
 
