@@ -87,9 +87,22 @@
       margin-top: 10px;
       width: 80px;
       height: 80px;
+      top: 6rem;
+      right: 0rem;
+      position: absolute;
 
     }
 
+    .container {
+      width: 80%;
+      margin: 8% auto;
+      /* Responsive margin */
+      padding: 5%;
+      /* Responsive padding */
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(24, 24, 24, 0.514);
+    }
 
     .contact-button img {
       width: 6vw;
@@ -177,137 +190,137 @@
     }
   }
 
-    /* desktop mode */
-    @media (min-width: 769px) {
-      .sidebar {
-        display: none;
-      }
-
-      .sidebar-toggle {
-        display: none;
-        /* Hide the sidebar toggle button */
-      }
-
-      /* Adjust content width when sidebar is hidden */
-      .container {
-        width: 90%;
-        /* Adjust width to accommodate the space */
-        margin-left: 5%;
-        /* Center the content */
-      }
+  /* desktop mode */
+  @media (min-width: 769px) {
+    .sidebar {
+      display: none;
     }
 
-    nav {
-      text-align: center;
-      padding: 1.15% 0;
-      /* Responsive padding */
-      background-color: #444;
-      /* Navigation background color */
+    .sidebar-toggle {
+      display: none;
+      /* Hide the sidebar toggle button */
     }
 
-    nav a {
-      text-decoration: none;
-      color: white;
-      /* Navigation link text color */
-      padding: 1% 4%;
-      /* Responsive padding */
-    }
-
-    nav a:hover {
-      background-color: #555;
-      /* Hover color for navigation links */
-      border-radius: 1rem;
-    }
-
-    /* Main content section */
+    /* Adjust content width when sidebar is hidden */
     .container {
-      width: 80%;
-      margin: 5% auto;
-      /* Responsive margin */
-      padding: 5%;
-      /* Responsive padding */
-      background-color: white;
-      border-radius: 1rem;
-      box-shadow: 0 0 10px rgba(24, 24, 24, 0.514);
+      width: 90%;
+      /* Adjust width to accommodate the space */
+      margin-left: 5%;
+      /* Center the content */
     }
+  }
 
-    .contact-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 20px;
-      background-color: white;
-      padding: 5vw;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+  nav {
+    text-align: center;
+    padding: 1.15% 0;
+    /* Responsive padding */
+    background-color: #444;
+    /* Navigation background color */
+  }
 
-    /* Style for individual buttons */
-    .contact-button {
-      text-decoration: none;
-      color: #333;
-      text-align: center;
-      transition: background-color 0.3s ease;
-      margin: 2vw;
-      padding: 1vw 2vw;
-      border-radius: 5px;
-      background-color: #ddd;
-      flex-basis: 25%;
-      box-shadow: 0 0 10px rgba(61, 60, 60, 0.377);
-    }
+  nav a {
+    text-decoration: none;
+    color: white;
+    /* Navigation link text color */
+    padding: 1% 4%;
+    /* Responsive padding */
+  }
 
-    .contact-button:hover {
-      background-color: #ccc;
-    }
+  nav a:hover {
+    background-color: #555;
+    /* Hover color for navigation links */
+    border-radius: 1rem;
+  }
 
-    .contact-button img {
-      width: 3vw;
-      /* Adjust icon size responsively */
-      height: auto;
-      /* margin-bottom: 4vh;
+  /* Main content section */
+  .container {
+    width: 80%;
+    margin: 5% auto;
+    /* Responsive margin */
+    padding: 5%;
+    /* Responsive padding */
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(24, 24, 24, 0.514);
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 5vw;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style for individual buttons */
+  .contact-button {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    background-color: #ddd;
+    flex-basis: 25%;
+    box-shadow: 0 0 10px rgba(61, 60, 60, 0.377);
+  }
+
+  .contact-button:hover {
+    background-color: #ccc;
+  }
+
+  .contact-button img {
+    width: 3vw;
+    /* Adjust icon size responsively */
+    height: auto;
+    /* margin-bottom: 4vh;
     margin-right: -4vw; */
-    }
+  }
 
-    /* Footer styling */
-    footer {
-      text-align: center;
-      padding: 1.15%;
-      /* Responsive padding */
-      background-color: #333;
-      color: white;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 1.15%;
+    /* Responsive padding */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 
-/* Form container */
-.containerContactMe {
+  /* Form container */
+  .containerContactMe {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
+  }
 
-.contactMeHeader {
+  .contactMeHeader {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-}
+  }
 
 
-/* Form elements */
-form {
+  /* Form elements */
+  form {
     display: flex;
     flex-direction: column;
-}
+  }
 
-label,
-input,
-textarea,
-button {
+  label,
+  input,
+  textarea,
+  button {
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
@@ -315,15 +328,15 @@ button {
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-size: 16px;
-}
+  }
 
-.buttonContactMe{
+  .buttonContactMe {
     background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
-}
+  }
 
-.buttonContactMe:hover {
+  .buttonContactMe:hover {
     background-color: #555;
-}
+  }
