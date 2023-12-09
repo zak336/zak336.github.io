@@ -159,9 +159,13 @@
       color: white;
       font-size: large;
       outline-color: rgba(61, 60, 60, 0.377);
-      
+
     }
-    
+
+    .small-touch-area {
+      pointer-events: none;
+    }
+
     .close-sidebar {
       position: absolute;
       top: 0px;
@@ -173,6 +177,7 @@
       color: #888;
       padding: none;
       outline-color: rgba(255, 255, 255, 0.493);
+
     }
 
   }
