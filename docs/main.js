@@ -42,5 +42,5 @@ function changeColor(event) {
     // Reset color after a delay
     setTimeout(function () {
         sidebarLink.style.color = originalColor;
-    }, 1000); // Adjust the duration as needed
+    }, 800); // Adjust the duration as needed
 }
