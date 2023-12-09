@@ -158,10 +158,10 @@
       background-color: #333;
       color: white;
       font-size: large;
-      outline-color: rgba(255, 255, 255, 0.493);
-
+      outline-color: rgba(61, 60, 60, 0.377);
+      
     }
-
+    
     .close-sidebar {
       position: absolute;
       /* top: 0px;
@@ -174,7 +174,7 @@
       padding: 84px;
       top: -68px;
       left: 78px;
-      outline-color: rgba(61, 60, 60, 0.377);
+      outline-color: rgba(255, 255, 255, 0.493);
     }
 
   }
