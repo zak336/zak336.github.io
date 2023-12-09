@@ -158,19 +158,8 @@
       background-color: #333;
       color: white;
       font-size: large;
+      outline-color: rgba(255, 255, 255, 0.493);
 
-      /* Styles for the close button */
-      .close-sidebar {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        color: #888;
-        outline: none;
-      }
     }
 
     .close-sidebar {
@@ -185,6 +174,7 @@
       padding: 84px;
       top: -68px;
       left: 78px;
+      outline-color: rgba(61, 60, 60, 0.377);
     }
 
   }
