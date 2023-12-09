@@ -160,7 +160,7 @@
       margin: 1vw 3.5vw;
     }
 
-    .sideFooter {
+    .sidebarElement.sideFooter {
       top: 10rem;
       position: relative;
       border-bottom: none;
