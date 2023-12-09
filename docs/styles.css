@@ -61,7 +61,7 @@
 
   a {
     text-decoration: none;
-    accent-color: ;
+    color: inherit;
   }
 
   @media (max-width: 768px) {
@@ -149,7 +149,7 @@
     }
 
     .sidebarElement:hover {
-      color: rgba(0, 255, 255, 0.959)0, 255, 255);
+      color: rgba(0, 255, 255, 0.959);
     }
 
     /* Show the sidebar when a certain button is clicked */
@@ -348,4 +348,45 @@
 
   .buttonContactMe:hover {
     background-color: #555;
+  }
+
+  /* Hide content by default */
+  .content {
+    display: none;
+  }
+
+  /* Loading screen styles */
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Ensure it's on top */
+  }
+
+  .loader {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-right: 20px;
+  }
+
+  /* Loader animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }

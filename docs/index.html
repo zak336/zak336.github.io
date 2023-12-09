@@ -16,85 +16,94 @@
 
 <body>
 
-  <header>
-    <div class="sidebar-toggle" onclick="toggleSidebar()"> ☰ </div>
-    <div class="headInfo">
-      <h1>Zakee Ahmed - Portfolio</h1>
-      <p>Welcome to my portfolio website</p>
+  <div class="loading-screen">
+    <div class="loader"></div>
+    <p>Loading...</p>
+  </div>
+
+  <div class="content">
+
+    <header>
+      <div class="sidebar-toggle" onclick="toggleSidebar()"> ☰ </div>
+      <div class="headInfo">
+        <h1>Zakee Ahmed - Portfolio</h1>
+        <p>Welcome to my portfolio website</p>
+      </div>
+      <div class="profile-image">
+        <img src="images/myImage.jpg" alt="Profile Image">
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="contactMe.html">Contact</a>
+      <a href="cv.MD">Download CV</a>
+    </nav>
+
+    <div class="sidebar">
+      <a class="sidebarElement" href="index.html">Home</a>
+      <a class="sidebarElement" href="#about">About</a>
+      <a class="sidebarElement" href="#projects">Projects</a>
+      <a class="sidebarElement" href="contactMe.html">Contact</a>
+      <a class="sidebarElement" href="cv.html">Download CV</a>
+      <button class="close-sidebar">&times;</button>
     </div>
-    <div class="profile-image">
-      <img src="images/myImage.jpg" alt="Profile Image">
+
+    <div class="container" id="about">
+      <h2>About Me</h2>
+      <p>Hi there, I am <b>Zakee Ahmed</b> from Bhilai, Chhattishgarh, India.</p>
+      <!-- <button download>Download CV</button> -->
+      <p></p>
     </div>
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="contactMe.html">Contact</a>
-    <a href="cv.MD">Download CV</a>
-  </nav>
+    <div class="container" id="projects">
+      <h2>Projects</h2>
+      <a href="https://github.com/zak336/zak336.github.io" target="_blank">This Website<span
+          aria-hidden="true">&#x25A1;&#x21E8;</span></a>
+      <p>IoT based Heart rate sensor for senior citizen.</p>
+      <p>Participated in an interschool RoboWar Tournament</p>
+      <!-- <img src="images/image-removebg-preview.png" alt="under construction"> -->
+    </div>
 
-  <div class="sidebar">
-    <a class="sidebarElement" href="index.html">Home</a>
-    <a class="sidebarElement" href="#about">About</a>
-    <a class="sidebarElement" href="#projects">Projects</a>
-    <a class="sidebarElement" href="contactMe.html">Contact</a>
-    <a class="sidebarElement" href="cv.html">Download CV</a>
-    <button class="close-sidebar">&times;</button>
-  </div>
+    <div class="container" id="skills">
+      <h2>Skills</h2>
+    </div>
 
-  <div class="container" id="about">
-    <h2>About Me</h2>
-    <p>Hi there, I am <b>Zakee Ahmed</b> from Bhilai, Chhattishgarh, India.</p>
-    <!-- <button download>Download CV</button> -->
-    <p></p>
-  </div>
+    <div class="container" id="contact">
+      <h2>Contact Me</h2>
 
-  <div class="container" id="projects">
-    <h2>Projects</h2>
-    <a href="https://github.com/zak336/zak336.github.io" target="_blank">This Website<span aria-hidden="true">&#x25A1;&#x21E8;</span></a>
-    <p>IoT based Heart rate sensor for senior citizen.</p>
-    <p>Participated in an interschool RoboWar Tournament</p>
-    <!-- <img src="images/image-removebg-preview.png" alt="under construction"> -->
-  </div>
+      <div class="contact-container">
+        <a class="contact-button" href="https://www.linkedin.com/in/zak336" target="_blank">
+          <img src="images/linkedin.png" class="resizable-icon" alt="LinkedIn Icon">
+          LinkedIn
+        </a>
+        <a class="contact-button" href="https://github.com/zak336" target="_blank">
+          <img src="images/github.png" class="resizable-icon" alt="GitHub Icon">
+          GitHub
+        </a>
+        <a class="contact-button" href="https://twitter.com/Zakeeahmed15" target="_blank">
+          <img src="images/twitter.png" class="resizable-icon" alt="Twitter Icon">
+          Twitter
+        </a>
 
-  <div class="container" id="skills">
-    <h2>Skills</h2>
-  </div>
-
-  <div class="container" id="contact">
-    <h2>Contact Me</h2>
-
-    <div class="contact-container">
-      <a class="contact-button" href="https://www.linkedin.com/in/zak336" target="_blank">
-        <img src="images/linkedin.png" class="resizable-icon" alt="LinkedIn Icon">
-        LinkedIn
-      </a>
-      <a class="contact-button" href="https://github.com/zak336" target="_blank">
-        <img src="images/github.png" class="resizable-icon" alt="GitHub Icon">
-        GitHub
-      </a>
-      <a class="contact-button" href="https://twitter.com/Zakeeahmed15" target="_blank">
-        <img src="images/twitter.png" class="resizable-icon" alt="Twitter Icon">
-        Twitter
-      </a>
-
-      <a class="contact-button"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true">
-        <img src="images/contact-form.png" class="resizable-icon" alt="Contact Icon">
-        Contact Me
-      </a>
-      <!-- <a class="contact-button" href="contactMe.html">
+        <a class="contact-button"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true">
+          <img src="images/contact-form.png" class="resizable-icon" alt="Contact Icon">
+          Contact Me
+        </a>
+        <!-- <a class="contact-button" href="contactMe.html">
         <img src="images/contact-form.png" class="resizable-icon" alt="Contact Icon">
         Contact Me
       </a> -->
+      </div>
     </div>
-  </div>
 
-  <footer>
-    &copy; 2023 Zakee Ahmed - Portfolio
-  </footer>
+    <footer>
+      &copy; 2023 Zakee Ahmed - Portfolio
+    </footer>
+  </div>
   <script src="main.js"></script>
 </body>
 
