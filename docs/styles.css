@@ -166,15 +166,17 @@
       border-bottom: none;
     }
 
-    .sidebarElement.sideFooter p{
+    .sidebarElement.sideFooter p {
       top: auto;
       position: relative;
+      text-align: center;
+      font-weight: lighter;
     }
 
-    .pSideFooter{
+    .pSideFooter {
       font-size: smaller;
     }
-  
+
     .sidebarElement {
       text-decoration: none;
       color: #000000;
@@ -188,7 +190,7 @@
 
     .sidebarElement:focus {
       outline: none !important;
-        /* Set the outline to a transparent color */
+      /* Set the outline to a transparent color */
     }
 
     /* Show the sidebar when a certain button is clicked */
@@ -231,7 +233,7 @@
 
     .close-sidebar:focus {
       outline: none !important;
-        /* Set the outline to a transparent color */
+      /* Set the outline to a transparent color */
     }
 
 
