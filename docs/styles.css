@@ -87,18 +87,16 @@
       margin-top: 10px;
       width: 80px;
       height: 80px;
-      top: 6rem;
-      right: 0rem;
+      top: 102px;
+      right: 272px;
       position: absolute;
 
     }
 
     .container {
       width: 80%;
-      margin: 8% auto;
-      /* Responsive margin */
+      margin: 3rem auto;
       padding: 5%;
-      /* Responsive padding */
       background-color: white;
       border-radius: 1rem;
       box-shadow: 0 0 10px rgba(24, 24, 24, 0.514);
