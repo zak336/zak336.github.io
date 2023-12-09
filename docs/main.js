@@ -31,3 +31,16 @@ function redirectToGoogleForm() {
 function redirectToMainPage() {
     window.location.href = 'index.html'; // Replace 'main_page.html' with your main page URL
 }
+
+function changeColor(event) {
+    const sidebarLink = event.target;
+    const originalColor = window.getComputedStyle(sidebarLink).color;
+
+    // Change color on click
+    sidebarLink.style.color = 'red'; // Change this to your desired color
+
+    // Reset color after a delay
+    setTimeout(function () {
+        sidebarLink.style.color = originalColor;
+    }, 1000); // Adjust the duration as needed
+}
