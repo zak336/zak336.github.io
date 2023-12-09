@@ -59,6 +59,10 @@
     /* Align text to the right */
   }
 
+  a{
+    text-decoration: none;
+  }
+
   @media (max-width: 768px) {
 
     body {
@@ -136,6 +140,10 @@
       margin: 1vw 3vw;
       padding: 4vw 2vw;
       border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebarElement:hover{
+      color: rgba(0, 255, 255, 0.959)0, 255, 255);
     }
 
     /* Show the sidebar when a certain button is clicked */
