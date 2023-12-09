@@ -155,8 +155,9 @@
     }
 
     .sidebarMiddle {
-      top: 4rem;
+      top: 7rem;
       position: relative;
+      margin: 1vw 3.5vw;
     }
 
     .sideFooter {
