@@ -132,15 +132,18 @@
 
     }
 
+    .sideHeader {
+      position: relative;
+      top: 5rem;
+    }
+
     .profile-image-sideHeader {
       width: 15vw;
       height: 15vw;
-      border-radius: 1rem;
+      border-radius: 2rem;
       overflow: hidden;
-      margin-right: 5%;
-      margin-left: 15vw;
-      top: 6.2rem;
-      right: 17.3rem;
+      top: -3.8rem;
+      right: 7.5rem;
       position: absolute;
     }
 
@@ -149,6 +152,17 @@
       height: 100%;
       object-fit: cover;
       /* Maintain aspect ratio */
+    }
+
+    .sidebarMiddle {
+      top: 4rem;
+      position: relative;
+    }
+
+    .sideFooter {
+      top: 10rem;
+      position: relative;
+      border-bottom: none;
     }
 
     .sidebarElement {
