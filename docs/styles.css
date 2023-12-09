@@ -162,10 +162,6 @@
 
     }
 
-    .small-touch-area {
-      pointer-events: none;
-    }
-
     .close-sidebar {
       position: absolute;
       top: 0px;
