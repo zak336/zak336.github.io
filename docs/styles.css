@@ -100,7 +100,7 @@
     }
 
     .profile-image:active {
-      transform: scale(1.6);
+      transform: scale(1.1);
       /* Scale up the image when active */
 
     }
