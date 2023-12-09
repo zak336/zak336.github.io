@@ -324,6 +324,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.buttonContactMe:hover {
     background-color: #555;
 }
