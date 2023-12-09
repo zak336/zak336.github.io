@@ -32,8 +32,10 @@ function redirectToMainPage() {
     window.location.href = 'index.html'; // Replace 'main_page.html' with your main page URL
 }
 
-// Simulate content loading
-window.addEventListener('load', function () {
+
+document.querySelector('.loading-screen').style.display = 'block';
+
+setTimeout(function() {
     document.querySelector('.loading-screen').style.display = 'none';
     document.querySelector('.content').style.display = 'block';
-});
+  }, 800); // 800 milliseconds = 0.8 seconds
