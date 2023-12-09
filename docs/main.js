@@ -33,9 +33,12 @@ function redirectToMainPage() {
 }
 
 
-document.querySelector('.loading-screen').style.display = 'block';
+// document.querySelector('.loading-screen').style.display = 'block';
 
+document.querySelector('.loading-screen').style.display = 'flex';
+
+// Simulate content loading after 0.8 seconds
 setTimeout(function() {
-    document.querySelector('.loading-screen').style.display = 'none';
-    document.querySelector('.content').style.display = 'block';
-  }, 800); // 800 milliseconds = 0.8 seconds
+  document.querySelector('.loading-screen').style.display = 'none';
+  document.querySelector('.content').style.display = 'block';
+}, 800);
