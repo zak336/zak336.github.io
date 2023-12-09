@@ -144,7 +144,7 @@
     }
 
     .sidebarElement:focus {
-      outline: 2px solid transparent !important;
+      outline: none !important
       /* Set the outline to a transparent color */
     }
 
@@ -172,7 +172,7 @@
     }
 
     .sidebar-toggle:focus {
-      outline: 2px solid transparent !important;
+      outline: none !important
     }
 
     .close-sidebar {
@@ -187,7 +187,7 @@
     }
 
     .close-sidebar:focus {
-      outline: 2px solid transparent !important;
+      outline: none !important
       /* Set the outline to a transparent color */
     }
 
