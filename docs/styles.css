@@ -318,6 +318,7 @@
     padding: 5vw;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 100px;
   }
 
   /* Style for individual buttons */
@@ -356,6 +357,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1;
   }
 
   /* contact me page */
