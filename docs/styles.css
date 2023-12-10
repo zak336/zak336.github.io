@@ -172,7 +172,6 @@
 
     .sidebarElement.sideFooter p {
       top: auto;
-      display: flex;
       font-weight: lighter;
     }
 
