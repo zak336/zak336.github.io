@@ -288,6 +288,14 @@
     border-radius: 1rem;
   }
 
+  .desktop-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+  }
+
   /* Main content section */
   .container {
     width: 80%;

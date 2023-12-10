@@ -44,3 +44,25 @@ function changeColor(event) {
         sidebarLink.style.color = originalColor;
     }, 600); // Adjust the duration as needed
 }
+
+// Get the height of the fixed nav
+const navHeight = document.querySelector('.desktop-nav').offsetHeight;
+
+// Add margin to the content to avoid overlap
+document.querySelector('.content').style.marginTop = navHeight + 'px';
+
+// Optionally, handle resizing of the window to adjust the margin dynamically
+window.addEventListener('resize', function () {
+    const newNavHeight = document.querySelector('.desktop-nav').offsetHeight;
+    document.querySelector('.content').style.marginTop = newNavHeight + 'px';
+});
+
+// Additionally, you can use scroll event to add/remove a class when scrolled past the nav
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('.desktop-nav');
+    if (window.pageYOffset > nav.offsetTop) {
+        nav.classList.add('fixed-nav');
+    } else {
+        nav.classList.remove('fixed-nav');
+    }
+});
