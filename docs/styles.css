@@ -137,6 +137,9 @@
 
     .sideHeader {
       position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       top: 5rem;
     }
 
@@ -170,13 +173,13 @@
     .sidebarElement.sideFooter {
       top: 10rem;
       position: relative;
+      display: flex;
+      flex-direction: column;
       border-bottom: none;
     }
 
     .sidebarElement.sideFooter p {
       top: auto;
-      display: flex;
-      flex-direction: column;
       position: relative;
       text-align: center;
       font-weight: lighter;
@@ -189,9 +192,10 @@
     .sidebarElement {
       text-decoration: none;
       color: #000000;
-      font-weight: bolder;
+      font-weight: 600;
       text-align: center;
-      display: block;
+      display: flex;
+      align-items: center;
       margin: 1vw 3vw;
       padding: 4vw 2vw;
       border-bottom: 1px solid rgba(0, 0, 0, 0.5);
