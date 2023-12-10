@@ -318,8 +318,12 @@
     padding: 5vw;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding-bottom: 100px;
   }
+
+  .container:last-child {
+    margin-bottom: 100px; /* Add extra margin at the bottom of the last container */
+  }
+  
 
   /* Style for individual buttons */
   .contact-button {
