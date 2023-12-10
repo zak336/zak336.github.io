@@ -173,11 +173,12 @@
     .sidebarElement.sideFooter p {
       top: auto;
       font-weight: lighter;
-    }
-
-    .pSideFooter {
       font-size: smaller;
     }
+
+    /* .pSideFooter {
+      font-size: smaller;
+    } */
 
     .sidebarElement {
       text-decoration: none;
