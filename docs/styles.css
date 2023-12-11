@@ -137,8 +137,11 @@
       top: 5rem;
     }
 
-    .sideHeaderHeading{
+    .sideHeaderHeading {
       font-size: medium;
+      right: 0rem;
+      position: absolute;
+      top: -2rem;
     }
 
     .profile-image-sideHeader {
@@ -146,8 +149,8 @@
       height: 15vw;
       border-radius: 2rem;
       overflow: hidden;
-      top: -3.8rem;
-      right: 5.5rem;
+      top: -2.8rem;
+      right: 7.3rem;
       position: absolute;
     }
 
@@ -171,7 +174,9 @@
     }
 
     .sidebarElement.sideFooter p {
-      top: auto;
+      top: 4rem;
+      position: absolute;
+      right: 17px;
       font-weight: lighter;
       font-size: smaller;
     }
@@ -293,7 +298,7 @@
     z-index: 1000;
   }
 
-  .content{
+  .content {
     margin-top: auto;
   }
 
@@ -321,9 +326,10 @@
   }
 
   .container:last-child {
-    margin-bottom: 100px; /* Add extra margin at the bottom of the last container */
+    margin-bottom: 100px;
+    /* Add extra margin at the bottom of the last container */
   }
-  
+
 
   /* Style for individual buttons */
   .contact-button {
