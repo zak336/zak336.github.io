@@ -361,6 +361,14 @@
     margin-right: -4vw; */
   }
 
+  .moveToTop{
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: none;
+      z-index: -1;
+  }
 
   /* Footer styling */
   footer {
