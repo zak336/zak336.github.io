@@ -81,6 +81,12 @@ function showButton() {
 }
 
 function moveToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    var scrollToTop = window.setInterval(function () {
+        var pos = window.pageYOffset;
+        if (pos > 0) {
+            window.scrollTo(0, pos - 20); // Adjust the value to control scrolling speed
+        } else {
+            window.clearInterval(scrollToTop);
+        }
+    }, 16); // Adjust the interval for smoother scrolling
 }
