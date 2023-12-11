@@ -239,9 +239,11 @@
 
     .profilePage {
       position: absolute;
-      top: 0.6rem;
+      top: -1.4rem;
       font-weight: lighter;
       font-size: 0.7rem;
+      right: 0.1rem;
+  }
     }
 
 

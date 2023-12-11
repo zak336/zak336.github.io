@@ -23,13 +23,13 @@ document.addEventListener('click', function (event) {
 
 
 function redirectToGoogleForm() {
-    window.location.href = 'form.html', '_blank'; // Replace 'main_page.html' with your main page URL
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true', '_blank'; // Replace 'main_page.html' with your main page URL
 } //https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true
 
 
 
 function redirectToMainPage() {
-    window.location.href = 'index.html'; // Replace 'main_page.html' with your main page URL
+    window.location.href = '../index.html'; 
 }
 
 function changeColor(event) {
@@ -37,12 +37,12 @@ function changeColor(event) {
     const originalColor = window.getComputedStyle(sidebarLink).color;
 
     // Change color on click
-    sidebarLink.style.color = 'green'; // Change this to your desired color
+    sidebarLink.style.color = 'green'; 
 
     // Reset color after a delay
     setTimeout(function () {
         sidebarLink.style.color = originalColor;
-    }, 600); // Adjust the duration as needed
+    }, 400); 
 }
 
 // Get the height of the fixed nav
@@ -57,7 +57,7 @@ window.addEventListener('resize', function () {
     document.querySelector('.content').style.marginTop = newNavHeight + 'px';
 });
 
-// Additionally, you can use scroll event to add/remove a class when scrolled past the nav
+// use scroll event to add/remove a class when scrolled past the nav
 window.addEventListener('scroll', function () {
     const nav = document.querySelector('.desktop-nav');
     if (window.pageYOffset > nav.offsetTop) {
