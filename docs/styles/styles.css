@@ -238,10 +238,10 @@
     }
 
     .profilePage {
-      font-weight: lighter;
-      font-size: 0.7rem;
       position: absolute;
       top: 0.6rem;
+      font-weight: lighter;
+      font-size: 0.7rem;
     }
 
 
