@@ -209,21 +209,17 @@
       display: block;
       text-align: center;
       position: absolute;
-      padding: 0.2rem;
+      padding: 0.1rem;
       top: 10px;
       right: 10px;
       padding: 10px;
       cursor: pointer;
-      background-color: #222222;
+      background-color: #333;
       color: #ffffff;
       font-size: large;
       outline: none;
       border-radius: 0.2rem;
 
-    }
-
-    .sidebar-toggle:hover {
-      color: #f4f4f4;
     }
 
     .close-sidebar {
