@@ -199,9 +199,9 @@
       outline: none;
     }
 
-    /* .sidebarElement:focus {
-      outline: none !important;
-    } */
+    .sidebarElement:hover {
+      color: green;
+    }
 
     /* Show the sidebar when a certain button is clicked */
     .show-sidebar {
