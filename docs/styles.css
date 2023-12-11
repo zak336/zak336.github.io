@@ -209,17 +209,16 @@
       display: block;
       text-align: center;
       position: absolute;
-      /* Position the sidebar toggle button */
+      padding: 0.2rem;
       top: 10px;
-      /* Adjust the top distance */
       right: 10px;
-      /* Adjust the right distance */
       padding: 10px;
       cursor: pointer;
       background-color: #222222;
-      color: white;
+      color: #ffffff
       font-size: large;
       outline: none;
+      border-radius: 0.2rem;
 
     }
 
