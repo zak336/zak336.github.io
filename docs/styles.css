@@ -199,10 +199,6 @@
       outline: none;
     }
 
-    .sidebarElement:hover {
-      color: green;
-    }
-
     /* Show the sidebar when a certain button is clicked */
     .show-sidebar {
       left: 0;
@@ -227,9 +223,9 @@
 
     }
 
-    /* .sidebar-toggle:focus {
-      outline: none !important;
-    } */
+    .sidebar-toggle:hover {
+      color: #f4f4f4;
+    }
 
     .close-sidebar {
       position: absolute;
