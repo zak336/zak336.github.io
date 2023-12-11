@@ -225,7 +225,7 @@
     .close-sidebar {
       position: absolute;
       top: 0px;
-      left: 78px;
+      left: 10rem;
       background: none;
       border: none;
       cursor: pointer;
