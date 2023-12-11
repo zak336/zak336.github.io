@@ -62,6 +62,7 @@
   a {
     text-decoration: none;
     color: inherit;
+    outline: none;
   }
 
   @media (max-width: 768px) {
@@ -195,12 +196,12 @@
       margin: 1vw 3vw;
       padding: 4vw 2vw;
       border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      outline: none;
     }
 
-    .sidebarElement:focus {
+    /* .sidebarElement:focus {
       outline: none !important;
-      /* Set the outline to a transparent color */
-    }
+    } */
 
     /* Show the sidebar when a certain button is clicked */
     .show-sidebar {
@@ -222,12 +223,13 @@
       background-color: #333;
       color: white;
       font-size: large;
+      outline: none;
 
     }
 
-    .sidebar-toggle:focus {
+    /* .sidebar-toggle:focus {
       outline: none !important;
-    }
+    } */
 
     .close-sidebar {
       position: absolute;
@@ -238,12 +240,12 @@
       cursor: pointer;
       font-size: 20px;
       padding: none;
+      outline: none;
     }
 
-    .close-sidebar:focus {
+    /* .close-sidebar:focus {
       outline: none !important;
-      /* Set the outline to a transparent color */
-    }
+    } */
 
 
   }
@@ -273,13 +275,13 @@
     padding: 1.15% 0;
     /* Responsive padding */
     background-color: #444;
-    /* Navigation background color */
+    outline: none;
   }
 
   nav a {
     text-decoration: none;
     color: white;
-    /* Navigation link text color */
+    outline: none;
     padding: 1% 4%;
     /* Responsive padding */
   }
@@ -288,6 +290,7 @@
     background-color: #555;
     /* Hover color for navigation links */
     border-radius: 1rem;
+    outline: none;
   }
 
   .desktop-nav {
@@ -296,6 +299,7 @@
     width: 100%;
     background-color: #333;
     z-index: 1000;
+    outline: none;
   }
 
   .content {
@@ -424,4 +428,8 @@
 
   .buttonContactMe:hover {
     background-color: #555;
+  }
+
+  button{
+    outline: none;
   }
