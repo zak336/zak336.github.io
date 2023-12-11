@@ -220,7 +220,7 @@
       /* Adjust the right distance */
       padding: 10px;
       cursor: pointer;
-      background-color: #333;
+      background-color: #222222;
       color: white;
       font-size: large;
       outline: none;
@@ -361,14 +361,21 @@
     margin-right: -4vw; */
   }
 
-  .moveToTop{
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-      padding: none;
-      z-index: -1;
+  #moveToTopBtn {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
+  
 
   /* Footer styling */
   footer {
