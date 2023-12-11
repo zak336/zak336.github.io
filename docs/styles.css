@@ -357,17 +357,21 @@
   }
 
   #moveToTopBtn {
-    display: none; /* Initially hide the button */
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+    width: 40px;
+    height: 40px;
     border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
     border-radius: 5px;
+  }
+  
+  #moveToTopBtn:hover {
+    background-color: #555;
     cursor: pointer;
   }
   
