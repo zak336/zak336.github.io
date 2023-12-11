@@ -29,7 +29,7 @@ function redirectToGoogleForm() {
 
 
 function redirectToMainPage() {
-    window.location.href = '../index.html'; 
+    window.location.href = '../index.html';
 }
 
 function changeColor(event) {
@@ -37,12 +37,12 @@ function changeColor(event) {
     const originalColor = window.getComputedStyle(sidebarLink).color;
 
     // Change color on click
-    sidebarLink.style.color = 'green'; 
+    sidebarLink.style.color = 'green';
 
     // Reset color after a delay
     setTimeout(function () {
         sidebarLink.style.color = originalColor;
-    }, 400); 
+    }, 400);
 }
 
 // Get the height of the fixed nav
