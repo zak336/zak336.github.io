@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Zakee Ahmed</title>
+  <meta name="author" content="Zakee">
+  <meta name="keywords" content="Zakee Ahmed, Zakee Ahmed portfolio">
+  <meta name="description" content="this is my portfolio">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+  <link rel="manifest" href="images/fav/site.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+  <header class="contactMeHeader">
+    <h1>Contact Me</h1>
+  </header>
+
+  <nav class="desktop-nav">
+    <a title="Index" href="https://zak336.github.io/">Home</a>
+    <a title="About" href="#about">About</a>
+    <a title="Projects" href="#projects">Projects</a>
+    <a title="Contact Me" href="/docs/pages/contactMe.html">Contact</a>
+    <a title="Resume" href="/docs/pages/cv.html">Download CV</a>
+  </nav>
+
+  <div class="sidebar">
+    <div class="sidebarElement sideHeader">
+      <div class="profile-image-sideHeader">
+        <img title="Zakee Ahmed" src="images/myImage.jpg" alt="Profile Image">
+      </div>
+      <div class="sideHeaderHeading"><b>Zakee Ahmed</b></div>
+      <p class="profilePage"><a href="/docs/pages/profile.html">View Profile</a></p>
+    </div>
+    <div class="sideMiddle">
+      <a class="sidebarElement" onclick="changeColor(event)" href="https://zak336.github.io">Home</a>
+      <a class="sidebarElement" onclick="changeColor(event)" href="#about">About</a>
+      <a class="sidebarElement" onclick="changeColor(event)" href="#projects">Projects</a>
+      <a class="sidebarElement" onclick="changeColor(event)" href="/docs/pages/contactMe.html">Contact</a>
+      <a class="sidebarElement" onclick="changeColor(event)" href="/docs/pages/cv.html">Download CV</a>
+    </div>
+    <button class="close-sidebar">&times;</button>
+    <div class="sidebarElement sideFooter">
+      <a class="contact-button contact-buttonSidebar" title="LinkedIn" href="https://www.linkedin.com/in/zak336" target="_blank">
+        <img src="images/linkedin.png" class="resizable-icon" alt="LinkedIn Icon">
+      </a>
+      <a class="contact-button contact-buttonSidebar" title="GitHub" href="https://github.com/zak336" target="_blank">
+        <img src="images/github.png" class="resizable-icon" alt="GitHub Icon">
+      </a>
+      <a class="contact-button contact-buttonSidebar" title="X (Twitter)" href="https://twitter.com/Zakeeahmed15" target="_blank">
+        <img src="images/twitter.png" class="resizable-icon" alt="Twitter Icon">
+      </a>
+      <!-- <div class="divPSF"> <p class="pSideFooter"> &copy; 2023 Zakee Ahmed - Portfolio</p> </div> -->
+      <p class="pSideFooter"> &copy; 2023 Zakee Ahmed - Portfolio</p>
+    </div>
+  </div>
+
+  <div class="containerContactMe">
+    <form action="mailto:zakeeukme@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button class="buttonContactMe" type="submit">Submit</button>
+
+      <button class="buttonContactMe" onclick="redirectToMainPage()">Go to Main Page</button>
+      <button class="buttonContactMe" onclick="redirectToGoogleForm()">Or fill out this <b>Google Form</b></button>
+
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2023 Zakee Ahmed - Portfolio
+  </footer>
+
+  <script src="script/main.js"></script>
+</body>
+
+</html>

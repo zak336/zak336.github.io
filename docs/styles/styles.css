@@ -237,9 +237,12 @@
       height: 40px;
     }
 
-    /* .close-sidebar:focus {
-      outline: none !important;
-    } */
+    .profilePage {
+      font-weight: lighter;
+      font-size: 0.7rem;
+      position: absolute;
+      top: 0.6rem;
+    }
 
 
   }
