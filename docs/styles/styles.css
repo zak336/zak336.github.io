@@ -304,7 +304,7 @@
     /* Main content section */
     .container {
       width: 80%;
-      margin: 3rem auto;
+      margin: 4rem auto;
       /* Responsive margin */
       padding: 5%;
       /* Responsive padding */
@@ -454,7 +454,4 @@
       margin: 0 3px 0 5px;
     }
     
-    .container.PC h2.ph2 a::after {
-      content: none; /* Override pseudo-element content for <a> inside <h2> with class ph2 */
-    }
     
