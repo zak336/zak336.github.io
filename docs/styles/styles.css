@@ -303,7 +303,7 @@
   /* Main content section */
   .container {
     width: 80%;
-    margin: 4rem auto;
+    margin: 3rem auto;
     /* Responsive margin */
     padding: 5%;
     /* Responsive padding */
@@ -329,6 +329,11 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  .container > *:first-child {
+    margin-top: 20px; /* Adjust the margin according to your preference */
+  }
+  
 
   .container:last-child {
     margin-bottom: 100px;
