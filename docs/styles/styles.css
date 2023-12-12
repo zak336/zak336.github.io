@@ -13,23 +13,19 @@
 
   header {
     background-color: #333;
-    /* Header background color */
     color: white;
-    /* Header text color */
     padding: 4vh;
-    /* Responsive padding */
     text-align: center;
     background-color: #333;
-    /* Header background color */
     box-sizing: border-box;
-    /* Include padding in the width calculation */
-    width: 100%;
-    /* Set header width to 100% */
+     width: 100%;
     display: flex;
-    /* Flexbox styles to center content */
     align-items: center;
-    /* Center vertically */
     justify-content: space-evenly;
+  }
+
+  #header h1 p{
+    line-height: 1.1;
   }
 
   .profile-image {
@@ -455,7 +451,7 @@
       outline: none;
     }
 
-    .PC a:after {
+    .PC a:not(h2):after {
       content:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
       margin: 0 3px 0 5px;
