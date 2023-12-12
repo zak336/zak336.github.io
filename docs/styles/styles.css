@@ -135,9 +135,9 @@
 
     .sideHeaderHeading {
       font-size: medium;
-      right: 0rem;
+      right: 4rem;
       position: absolute;
-      top: -2rem;
+      top: 0rem;
     }
 
     .profile-image-sideHeader {
@@ -312,6 +312,11 @@
     box-shadow: 0 0 10px rgba(24, 24, 24, 0.514);
   }
 
+  .moreProjects {
+    position: absolute;
+    color: #555;
+  }
+
   .contact-container {
     display: flex;
     justify-content: space-around;
@@ -439,4 +444,10 @@
 
   button {
     outline: none;
+  }
+
+  a[target="_blank"]:after{
+    content:
+      url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+      margin: 0 3px 0 5px;
   }
