@@ -34,17 +34,12 @@
 
   .profile-image {
     width: 15vw;
-    /* Responsive width */
     height: 15vw;
-    /* Responsive height */
     border-radius: 1rem;
-    /* Responsive rounded corners */
     overflow: hidden;
-    /* Hide overflow for rounded corners */
     margin-right: 5%;
-    /* Responsive margin */
     margin-left: 15vw;
-    /* Responsive margin */
+
   }
 
   .profile-image img {
@@ -54,7 +49,7 @@
     /* Maintain aspect ratio */
   }
 
-  .headInfo {
+  .pro .headInfo {
     text-align: right;
     /* Align text to the right */
   }
@@ -93,8 +88,8 @@
       margin-top: 10px;
       width: 80px;
       height: 80px;
-      top: 6.2rem;
-      right: 17.3rem;
+      top: 92px;
+      left: 37px;
       position: absolute;
       transition: transform 0.2s ease;
       /* Add a smooth transition */
