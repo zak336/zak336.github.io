@@ -194,6 +194,12 @@
       outline: none;
     }
 
+    .contact-button img {
+      width: 3vw;
+      height: auto;
+    }
+  
+
     /* Show the sidebar when a certain button is clicked */
     .show-sidebar {
       left: 0;
@@ -364,10 +370,7 @@
 
   .contact-button img {
     width: 3vw;
-    /* Adjust icon size responsively */
     height: auto;
-    /* margin-bottom: 4vh;
-    margin-right: -4vw; */
   }
 
   #moveToTopBtn {
