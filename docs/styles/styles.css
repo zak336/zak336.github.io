@@ -246,6 +246,10 @@
 
   /* desktop mode */
   @media (min-width: 769px) {
+    .projectsHeader {
+      padding: 10vh;
+    }
+    
     .sidebar {
       display: none;
     }
