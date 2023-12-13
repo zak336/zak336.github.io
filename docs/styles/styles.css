@@ -330,14 +330,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .container > *:first-child {
-    margin-top: 4rem; /* Adjust the margin according to your preference */
+  #about {
+    margin-top: 4rem; 
   }
   
 
   .container:last-child {
     margin-bottom: 100px;
-    /* Add extra margin at the bottom of the last container */
   }
 
 
