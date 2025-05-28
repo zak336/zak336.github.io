@@ -20,83 +20,128 @@
 
 <body>
 
-  <div class="content">
+  
+  
+  <header id="header"
+  style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2vw; width: 100%;">
+  <div class="sidebar-toggle" onclick="toggleSidebar()"> ☰ </div>
+  <div class="headInfo" style="flex: 1 1 300px; min-width: 220px;">
+    <h1 style="margin-bottom: 0.3em;">Zakee Ahmed - Portfolio</h1>
+    <p>CyberSecurity Enthusiast | Web Developer </p>
+  </div>
+  <div class="profile-image" style="flex-shrink: 0;">
+    <img title="Zakee Ahmed" src="images/myImage.jpg" alt="Profile Image">
+    <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌓</button>
+  </div>
+  </header>
 
-    <header id="header">
-      <div class="sidebar-toggle" onclick="toggleSidebar()"> ☰ </div>
-      <div class="headInfo">
-        <h1>Zakee Ahmed - Portfolio</h1>
-        <p>CyberSecurity Enthusiast | Web Developer </p>
-      </div>
-      <div class="profile-image">
+  <nav class="desktop-nav">
+    <a title="Index" href="https://zak336.github.io/">Home</a>
+    <a title="About" href="#about">About</a>
+    <a title="Projects" href="#projects">Projects</a>
+    <!-- <a title="Contact Me" href="pages/contactMe.html">Contact</a> -->
+    <a title="Resume" href="pages/cv.pdf">Download CV</a>
+  </nav>
+
+  <div class="sidebar">
+    <div class="sidebarElement sideHeader">
+      <div class="profile-image-sideHeader">
         <img title="Zakee Ahmed" src="images/myImage.jpg" alt="Profile Image">
       </div>
-    </header>
-
-    <nav class="desktop-nav">
-      <a title="Index" href="https://zak336.github.io/">Home</a>
-      <a title="About" href="#about">About</a>
-      <a title="Projects" href="#projects">Projects</a>
-      <a title="Contact Me" href="pages/contactMe.html">Contact</a>
-      <a title="Resume" href="pages/cv.html">Download CV</a>
-    </nav>
-
-    <div class="sidebar">
-      <div class="sidebarElement sideHeader">
-        <div class="profile-image-sideHeader">
-          <img title="Zakee Ahmed" src="images/myImage.jpg" alt="Profile Image">
-        </div>
-        <div class="sideHeaderHeading"><b>Zakee Ahmed</b></div>
-        <div class="sideheadertag"><p class="profilePage">CyberSecurity Enthusiast | Web Developer </p></div>
-      </div>
-      <div class="sideMiddle">
-        <a class="sidebarElement" onclick="changeColor(event)" href="https://zak336.github.io">Home</a>
-        <a class="sidebarElement" onclick="changeColor(event)" href="#about">About</a>
-        <a class="sidebarElement" onclick="changeColor(event)" href="#projects">Projects</a>
-        <a class="sidebarElement" onclick="changeColor(event)" href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true">Contact</a>
-        <a class="sidebarElement" onclick="changeColor(event)" href="pages/cv.html">Download CV</a>
-      </div>
-      <button class="close-sidebar">&times;</button>
-      <div class="sidebarElement sideFooter">
-        <a class="contact-button contact-buttonSidebar" title="LinkedIn" href="https://www.linkedin.com/in/zak336"
-          target="_blank">
-          <img src="images/linkedin.png" class="resizable-icon" alt="LinkedIn Icon">
-        </a>
-        <a class="contact-button contact-buttonSidebar" title="GitHub" href="https://github.com/zak336" target="_blank">
-          <img src="images/github.png" class="resizable-icon" alt="GitHub Icon">
-        </a>
-        <a class="contact-button contact-buttonSidebar" title="X (Twitter)" href="https://twitter.com/Zakeeahmed15"
-          target="_blank">
-          <img src="images/twitter.png" class="resizable-icon" alt="Twitter Icon">
-        </a>
-        <!-- <div class="divPSF"> <p class="pSideFooter"> &copy; 2023 Zakee Ahmed - Portfolio</p> </div> -->
-        <p class="pSideFooter"> &copy; 2023 Zakee Ahmed - Portfolio</p>
+      <div class="sideHeaderHeading"><b>Zakee Ahmed</b></div>
+      <div class="sideheadertag">
+        <p class="profilePage">CyberSecurity Enthusiast | Web Developer </p>
       </div>
     </div>
-
+    <div class="sideMiddle">
+      <a class="sidebarElement" onclick="changeColor(event)" href="https://zak336.github.io">Home</a>
+      <a class="sidebarElement" onclick="changeColor(event)" href="#about">About</a>
+      <a class="sidebarElement" onclick="changeColor(event)" href="#projects">Projects</a>
+      <!-- <a class="sidebarElement" onclick="changeColor(event)"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true">Contact</a> -->
+      <a class="sidebarElement" onclick="changeColor(event)" href="pages/cv.pdf">Download CV</a>
+    </div>
+    <button class="close-sidebar">&times;</button>
+    <div class="sidebarElement sideFooter">
+      <a class="contact-button contact-buttonSidebar" title="LinkedIn" href="https://www.linkedin.com/in/zak336"
+        target="_blank">
+        <img src="images/linkedin.png" class="resizable-icon" alt="LinkedIn Icon">
+      </a>
+      <a class="contact-button contact-buttonSidebar" title="GitHub" href="https://github.com/zak336" target="_blank">
+        <img src="images/github.png" class="resizable-icon" alt="GitHub Icon">
+      </a>
+      <a class="contact-button contact-buttonSidebar" title="X (Twitter)" href="https://twitter.com/Zakeeahmed15"
+        target="_blank">
+        <img src="images/twitter.png" class="resizable-icon" alt="Twitter Icon">
+      </a>
+      <!-- <div class="divPSF"> <p class="pSideFooter"> &copy; 2023 Zakee Ahmed - Portfolio</p> </div> -->
+      <p class="pSideFooter"> &copy; 2023 Zakee Ahmed - Portfolio</p>
+    </div>
+  </div>
+  
+  <div class="content">
     <div class="container" id="about">
       <h2>About Me</h2>
-      <p>Hi there, I am <b>Zakee Ahmed</b> from Bhilai, Chhattishgarh, India.</p>
-      <!-- <button download>Download CV</button> -->
-      <p></p>
-    </div>
-
-    <div class="container PC" id="projects">
-      <h2><a href="pages/projects.html">Projects</a></h2>
-      <a href="https://github.com/zak336/zak336.github.io" target="_blank">This Website</a>
-      <p>IoT based Heart rate sensor for senior citizen.</p>
-      <p>Prepared a robo for an interschool RoboSoccer Tournament(ATL - Atal Innovation Mission)</p>
-      <!-- <div class="moreProjects"><a href="pages/projects.html">More..</a></div> -->
-      <!-- <img src="images/image-removebg-preview.png" alt="under construction"> -->
+      <div class="card">
+        <p>Hi there, I am <b>Zakee Ahmed</b> from Bhilai, Chhattishgarh, India. I am a passionate CyberSecurity
+          Enthusiast and Web Developer with a strong foundation in modern web technologies and a keen interest in
+          building secure, scalable, and user-friendly applications.</p>
+        <p>I thrive on solving real-world problems and am always eager to learn new skills and technologies. I am
+          actively seeking opportunities to contribute to innovative teams and projects.</p>
+        <ul>
+          <li> Strong problem-solving and analytical skills</li>
+          <li> Experience with both frontend and backend development</li>
+          <li> Passionate about cybersecurity and best practices</li>
+          <li> Excellent communicator and team player</li>
+        </ul>
+      </div>
     </div>
 
     <div class="container" id="skills">
       <h2>Skills</h2>
+      <div>
+        <span class="skill-badge">HTML5</span>
+        <span class="skill-badge">CSS3</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">C/C++</span>
+        <span class="skill-badge">Node.js</span>
+        <span class="skill-badge">React</span>
+        <span class="skill-badge">Git & GitHub</span>
+        <span class="skill-badge">Linux</span>
+        <span class="skill-badge">Networking</span>
+        <span class="skill-badge">OWASP</span>
+        <span class="skill-badge">Penetration Testing</span>
+        <span class="skill-badge">Arduino</span>
+        <span class="skill-badge">IoT</span>
+        <span class="skill-badge">Teamwork</span>
+        <span class="skill-badge">Communication</span>
+      </div>
+    </div>
+
+    <div class="container PC" id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3><a href="https://github.com/zak336/zak336.github.io" target="_blank">This Website</a></h3>
+        <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Features a custom dark/light
+          mode, interactive sidebar, and a clean, professional design. <br><b>Role:</b> Full Stack Developer</p>
+      </div>
+      <div class="card">
+        <h3>IoT based Heart rate sensor for senior citizen</h3>
+        <p>Developed an IoT solution using Arduino and sensors to monitor heart rate in real-time for senior citizens.
+          Data is processed and visualized for caregivers, improving health monitoring and response
+          time.<br><b>Technologies:</b> Arduino, C/C++, Sensors, IoT, Data Visualization</p>
+      </div>
+      <div class="card">
+        <h3>RoboSoccer Tournament Robot</h3>
+        <p>Built and programmed a robot for an interschool RoboSoccer Tournament (ATL - Atal Innovation Mission).
+          Designed for agility and strategy, the robot competed in a team-based soccer
+          challenge.<br><b>Technologies:</b> Robotics, C/C++, Teamwork, Sensors</p>
+      </div>
     </div>
 
     <div class="container" id="contact">
-      <h2>Contact Me</h2>
-
+      <h2>Socials</h2>
       <div class="contact-container">
         <a class="contact-button" title="LinkedIn" href="https://www.linkedin.com/in/zak336" target="_blank">
           <img src="images/linkedin.png" class="resizable-icon" alt="LinkedIn Icon">
@@ -110,26 +155,32 @@
           <img src="images/twitter.png" title="X (Twitter)" class="resizable-icon" alt="Twitter Icon">
           Twitter
         </a>
-
-        <a class="contact-button" title="Contact me"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true">
-          <img src="images/contact-form.png" class="resizable-icon" alt="Contact Icon">
-          Contact Me
+        <a class="contact-button" title="Email" href="mailto:zakeeukme@gmail.com">
+          <img src="images/email.png" class="resizable-icon" alt="Email Icon">
+          Email Me
         </a>
-        <!-- <a class="contact-button" href="contactMe.html">
-        <img src="images/contact-form.png" class="resizable-icon" alt="Contact Icon">
-        Contact Me
-      </a> -->
       </div>
     </div>
 
     <button onclick="moveToTop()" id="moveToTopBtn" title="Go to top">&UpArrow;</button>
 
-    <footer>
-      &copy; 2023 Zakee Ahmed - Portfolio
-    </footer>
   </div>
+  <footer>
+    &copy; 2023 Zakee Ahmed - Portfolio
+  </footer>
   <script src="script/main.js"></script>
+  <script>
+    // Theme toggle logic
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+    // On load, set theme from localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
 </body>
 
 </html>

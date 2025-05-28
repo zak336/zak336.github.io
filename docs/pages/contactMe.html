@@ -22,13 +22,14 @@
   <header class="contactMeHeader">
     <h1>Contact Me</h1>
   </header>
+  <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌓</button>
 
   <nav class="desktop-nav">
     <a title="Home" href="https://zak336.github.io/">Home</a>
     <a title="About" href="../index.html#about">About</a>
     <a title="Projects" href="projects.html">Projects</a>
     <a title="Contact Me" href="contactMe.html">Contact</a>
-    <a title="Resume" href="cv.html">Download CV</a>
+    <a title="Resume" href="cv.pdf">Download CV</a>
   </nav>
 
   <div class="sidebar">
@@ -44,7 +45,7 @@
       <a class="sidebarElement" onclick="changeColor(event)" href="#about">About</a>
       <a class="sidebarElement" onclick="changeColor(event)" href="#projects">Projects</a>
       <a class="sidebarElement" onclick="changeColor(event)" href="contactMe.html">Contact</a>
-      <a class="sidebarElement" onclick="changeColor(event)" href="cv.html">Download CV</a>
+      <a class="sidebarElement" onclick="changeColor(event)" href="cv.pdf">Download CV</a>
     </div>
     <button class="close-sidebar">&times;</button>
     <div class="sidebarElement sideFooter">
@@ -65,22 +66,31 @@
   </div>
 
   <div class="containerContactMe">
-    <form action="mailto:zakeeukme@gmail.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <div class="card-form" style="margin-bottom:2rem;">
+      <h3>Email Me Directly</h3>
+      <form action="mailto:zakeeukme@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-      <button class="buttonContactMe" type="submit">Submit</button>
-
-      <button class="buttonContactMe" onclick="redirectToMainPage()">Go to Main Page</button>
-      <button class="buttonContactMe" onclick="redirectToGoogleForm()">Or fill out this <b>Google Form</b></button>
-
-    </form>
+        <button class="buttonContactMe contact-button" type="submit">
+          <img src="../images/contact-form.png" class="resizable-icon" alt="Email Icon"> Send Email
+        </button>
+      </form>
+    </div>
+    <div class="card-form">
+      <h3>Or Use My Google Form</h3>
+      <a class="buttonContactMe contact-button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSe0I4oIi6VSQML7vjXyo3SnwJZymzFKR0tMo6QMlff3JkMdMw/viewform?embedded=true"
+        target="_blank">
+        <img src="../images/contact-form.png" class="resizable-icon" alt="Google Form Icon"> Open Google Form
+      </a>
+    </div>
   </div>
 
   <footer>
@@ -88,6 +98,18 @@
   </footer>
 
   <script src="../script/main.js"></script>
+  <script>
+    // Theme toggle logic
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+    // On load, set theme from localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
 </body>
 
 </html>

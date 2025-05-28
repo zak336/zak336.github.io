@@ -25,11 +25,13 @@
         <a title="Contact Me" href="contactMe.html">Contact</a>
         <a title="Resume" href="cv.html">Download CV</a>
     </nav>
-
+    <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌓</button>
+    
     <div class="sidebar">
         <div class="sidebarElement sideHeader">
             <div class="profile-image-sideHeader">
                 <img title="Zakee Ahmed" src="../images/myImage.jpg" alt="Profile Image">
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌓</button>
             </div>
             <div class="sideHeaderHeading"><b>Zakee Ahmed</b></div>
             <p class="profilePage"><a href="profile.html">View Profile</a></p>
@@ -71,6 +73,18 @@
 
     <button onclick="moveToTop()" id="moveToTopBtn" title="Go to top">&UpArrow;</button>
     <script src="../script/main.js"></script>
+    <script>
+        // Theme toggle logic
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+          document.documentElement.classList.toggle('dark-mode');
+          localStorage.setItem('theme', document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+        // On load, set theme from localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+        }
+      </script>
 </body>
 
 </html>
